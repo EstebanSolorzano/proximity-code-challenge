@@ -14,7 +14,7 @@ export interface ICar extends Mongoose.Document {
 }
 
 const CarSchema: Mongoose.Schema = new Mongoose.Schema({
-    UUID: { type: String, required: true, unique: true },
+    UUID: { type: String, required: true },
     VIN: { type: String, required: false },
     Make: { type: String, required: false },
     Model: { type: String, required: false },

@@ -5,7 +5,7 @@ import { middleware } from '../middleware/middleware';
 const app = express();
 
 export default class ExpressServer {
-  constructor() {   
+  constructor() {
     middleware.bodyParser(app);
   }
 
