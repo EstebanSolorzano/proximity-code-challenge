@@ -25,6 +25,19 @@ The CSV files names are:
 2. finaldataTest2, which is sent by client2
 3. finaldataTest3, which is sent by client3
 
+The configurations for the clients are located in /common/clientConfigurations.ts and are as follows:
+//name of the client
+client3: {
+            //list of excluded fileds that are sent that we dont care
+            excludedFields: ["Company Name", "Owner Name"],
+            //the delimiter used in the CSV file
+            delimiter: "$"
+}
+
+You can add new configurations and place a new CSV file in the /uploads folder.
+
+The asumption is that you get a sample CSV file form the client before processing so you can adjust the configuration.
+
 ## Installation
 
 ```bash
